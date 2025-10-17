@@ -37,9 +37,9 @@ nav{
 }
 
 .nav-links{
-    gap: 2rem; 
+    gap: 0.5rem; 
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
@@ -181,6 +181,9 @@ section{
 
 .profile-pic{
     border-radius: 50rem;
+    width: 120px;
+    height: 120px;
+    margin: auto;
     border-color: blueviolet;
     border-style: double;
     padding: 4px;
@@ -215,7 +218,7 @@ section{
 }
 
 .section__text__p2{
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-bottom: 1rem; 
 }
 
@@ -322,6 +325,9 @@ section{
 
 .about-pic{
     border-radius: 3rem;
+    width: 200px;
+    height: 200px;
+    margin: auto;
     border-color: aqua;
     border-style: double;
     padding: 4px;
@@ -440,12 +446,13 @@ article.icon{
 }
 .contact-info-upper-container{
     display: flex;
+    width: 380px;
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background: rgb(250,250,250);
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0.5rem;
 
 }
@@ -454,13 +461,13 @@ article.icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem;
+    gap: 0.02rem;
+    margin: 2rem;
 
 }
 
 .contact-info-container p{
-    font-size: larger;
+    font-size:medium
     
 }
 
@@ -481,6 +488,7 @@ footer{
 
 footer p{
     text-align: center;
+    
 }
 
 
