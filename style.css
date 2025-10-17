@@ -166,7 +166,6 @@ section{
 
 /* profile section  */
 #profile{
-    display: flex;
     justify-content: center;
     gap: 5rem;
     height: 8vh;
@@ -174,8 +173,8 @@ section{
 
 .section__pic-container{
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin: auto 0;
 }
 
@@ -238,8 +237,8 @@ section{
 /* icons */
 .icon{
     cursor: pointer;
-    height: 1.8rem;
-    background-color: #e0e0e0;
+    height: 1.3rem;
+    
     border-radius: 50rem;
     border-color: blueviolet;
     border-style: double;
@@ -249,6 +248,8 @@ section{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
+
+
 
 /* buttons */
 .btn-container{
@@ -347,8 +348,8 @@ section{
 
 .arrow{
     position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    right: -2rem;
+    bottom: 0.5rem;
 }
 
 .details-container{
@@ -367,8 +368,8 @@ section{
 }
 
 .section__pic-container{
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     margin: auto 0;
 }
 
@@ -401,6 +402,7 @@ section{
 
 article{
     display: flex;
+    
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
@@ -442,16 +444,16 @@ article.icon{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    
 }
 .contact-info-upper-container{
     display: flex;
-    width: 380px;
+    width: 260px;
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: rgb(250,250,250);
+    
     margin: 1rem auto;
     padding: 0.5rem;
 
@@ -467,17 +469,17 @@ article.icon{
 }
 
 .contact-info-container p{
-    font-size:medium
+    font-size: medium
     
 }
 
 .contact-icon{
     cursor: default;
-    height: 2rem;
+    height: 1rem;
 }
 
 .email-icon{
-    height: 2.5rem;
+    height: 1rem;
 }
 
 /* footer section */

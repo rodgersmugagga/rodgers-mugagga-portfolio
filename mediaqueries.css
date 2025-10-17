@@ -43,3 +43,13 @@
     .title { font-size: 3rem; }
     .section__text__p2 { font-size: 1.75rem; }
 }
+
+/* @media(min-width: 300px){
+    
+    .section__pic-container{
+      display: flex;
+      height: 100px;
+      width: 100px;
+      margin: auto 0;
+      }
+} */
