@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RODGERS PORTFOLIO</title>
+  <title>Rodgers Mugagga — Full‑Stack MERN Developer in kampala, Uganda| Portfolio, serving Kampala, Mbarara, and East Africa.</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css"> 
-  <link rel="stylesheet" href="mediaqueries.css">
-  <!-- SEO / Social preview (replace YOUR_SITE_URL and OG_IMAGE_URL) -->
-  <title>Rodgers Mugagga — Full‑Stack MERN Developer | Portfolio</title>
-  <meta name="description" content="Rodgers Mugagga — Full‑Stack MERN developer building high-performance MERN apps, financial systems and real-estate solutions. View projects, resume, and contact.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Rodgers Mugagga — Full‑Stack MERN developer in kampala, Uganda building high-performance MERN apps, financial systems and real-estate solutions.">
+  <meta name="keywords" 
+    content="Rodgers Mugagga, Full-Stack Developer in Uganda, Software Engineer in Kampala Uganda, Web Developer in Uganda, Flutter developer in Kampala, PHP developer in Kampala, Rodgers Mugagga software engineer, Mobile app developer Mbarara Uganda, Freelance software engineer Uganda, Web application developer Uganda, Mobile app development Mbarara, Website design & development Uganda">
   <link rel="canonical" href="https://rodgers-mugagga-portfolio.netlify.app/">
   <meta name="robots" content="index, follow">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +29,6 @@
   <meta property="og:description" content="I build high‑performance MERN web apps and mobile solutions. See case studies and demos.">
   <meta property="og:url" content="https://rodgers-mugagga-portfolio.netlify.app/">
   <meta property="og:image" content="https://rodgers-mugagga-portfolio.netlify.app/assets/og-image.png">
-  <meta property="og:image:alt" content="Rodgers Mugagga — portfolio preview">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -71,329 +73,253 @@
     ]
   }
   </script>
+
 </head>
 <body>
 
-  <!-- Theme Toggle Button -->
-  <div class="icon" id="theme-toggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle theme" onclick="toggleTheme()">🌙</div>
+  <!-- Theme Toggle -->
+  <div class="icon theme-toggle" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle theme">🌙</div>
 
-  
-    <nav id="desktop-nav">
-      <div class="logo">RODGERS</div>
-      <ul class="nav-links">
-      
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">RODGERS</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">RODGERS</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </ul>
-    
-        
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">RODGERS</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          
-          
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          
-        </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="https://res.cloudinary.com/dnj7dtnvx/image/upload/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png" alt="mugagga rodgers profile picture" class="profile-pic">
+  <!-- Hero / Profile Section -->
+  <section id="profile">
+    <div class="profile-pic-container">
+      <img src="https://res.cloudinary.com/dnj7dtnvx/image/upload/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png" alt="Rodgers Mugagga profile picture Full-Stack Developer,Front-End Developer, Back-End Developer, Mobile Developer  Based in Kampala, Uganda" class="profile-pic">
+    </div>
+    <div class="profile-text">
+      <p class="intro">Hello I'm</p>
+      <h1 class="name">Mugagga Rodgers</h1>
+      <p class="role">Full-Stack Developer</p>
+      <h2>Based in Kampala, Uganda</h2>
+      
+      <p>Software engineer specializing in web and mobile applications. Experienced with React, Node.js, Flutter, PHP, and MySQL.</p>
+      <p>Serving Kampala, Entebbe, Mbarara, Masaka and East Africa</p>
+      <div class="btn-container">
+        <button class="btn btn-primary" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+        <button class="btn btn-secondary" onclick="location.href='#contact'">Contact Info</button>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Mugagga Rodgers</h1>
-        <p class="section__text__p2">Fullstack Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <i class="fa-brands fa-linkedin icon" onclick="location.href='https://www.linkedin.com/in/mugaggarodgers'"></i>
-          
-        </div>
-        <div id="socials-container">
-          <i class="fa-brands fa-github icon" onclick="location.href='https://github.com/rodgersmugagga'"></i>
-        
-        </div>
+      <div class="socials">
+        <a href="https://github.com/rodgersmugagga" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mugaggarodgers" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section__pic-container">
-        <img 
-        src="https://res.cloudinary.com/dnj7dtnvx/image/upload/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png" 
-        alt="Profile picture"
-        class="about-pic">
+  <!-- About Section -->
+  <section id="about">
+    <p class="section-intro">Get To Know More</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <div class="about-pic-container">
+        <img src="https://res.cloudinary.com/dnj7dtnvx/image/upload/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png" alt="Rodgers Mugagga  picture Full-Stack Developer, Front-End Developer, Back-End Developer, Mobile Developer Based in Kampala, Uganda" class="about-pic">
       </div>
-
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <i class="fa-solid fa-award icon"></i>
-    
+      <div class="about-text">
+        <div class="about-cards">
+          <div class="card">
+            <i class="fa-solid fa-award"></i>
             <h3>Experience</h3>
-            <p>2+ years <br>Fullstack Development</p>
+            <p>2+ years Fullstack Development</p>
           </div>
-          <div class="details-container">
-            <i class="fa-solid fa-user-graduate icon"></i>
-            
+          <div class="card">
+            <i class="fa-solid fa-user-graduate"></i>
             <h3>Education</h3>
-            <p>B.Sc. Bachelors Degree<br>Software Engineering</p>
+            <p>B.Sc. Software Engineering</p>
           </div>
         </div>
-        <div class="text-container">
-          <p>
-            I am <strong>Mugagga Rodgers</strong>, a driven and detail-oriented software engineering student at 
-            <strong>Mbarara University of Science & Technology</strong>. With a passion for crafting user-centric digital solutions, 
-            I specialize in full-stack development, problem solving, and continuous learning.
-          </p>
+        <p>I am <strong>Mugagga Rodgers</strong>, a driven software engineering student at <strong>Mbarara University of Science & Technology</strong>. I specialize in full-stack development, problem-solving, and continuous learning.</p>
+        <p>As <strong>Speaker of MUCOSA</strong>, I gained leadership experience and honed communication skills, actively contributing to the tech community.</p>
+        <p>My technical toolkit includes web & mobile development, API design, and clean, maintainable code. I continuously explore new technologies and best practices.</p>
+        <p>Explore my projects to see my approach to solving real-world problems and collaborative efforts.</p>
+      </div>
+    </div>
+  </section>
 
-          <p>
-            In my role as <strong>Speaker of MUCOSA</strong>, I’ve gained leadership experience, honed my communication skills, 
-            and actively contributed to fostering a strong student tech community. These responsibilities have sharpened my ability 
-            to manage projects, lead teams, and engage with stakeholders.
-          </p>
 
-          <p>
-            My technical toolkit includes (but is not limited to) web and mobile development, API design, and clean, maintainable code architecture. 
-            I am continuously exploring new technologies and industry best practices to stay current and to deliver solutions that are scalable, 
-            efficient, and impactful.
-          </p>
+  <!-- Experience Section -->
+<section id="experience">
+  <p class="section-intro">Explore My</p>
+  <h2 class="section-title">Experience</h2>
 
-          <p>
-            On this portfolio, you’ll find selected projects that showcase my approach to solving real-world problems, 
-            my technical growth, and collaborative efforts. I welcome you to explore my work, connect, and discuss potential collaborations.
-          </p>
+  <!-- Front-End Development -->
+  <div class="details-container">
+    <h2 class="experience-sub-title">Front-End Development</h2>
+    <div class="article-container">
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>HTML</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>CSS</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>JavaScript</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>React</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>Flutter</h3>
+          <p>Basic</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>Java</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Back-End Development -->
+  <div class="details-container">
+    <h2 class="experience-sub-title">Back-End Development</h2>
+    <div class="article-container">
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>Node.js</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>Express.js</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>Git</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>MySQL</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+      <article>
+        <i class="fa-solid fa-circle-check icon"></i>
+        <div>
+          <h3>PHP</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <p class="section-intro">Browse My Recent</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="https://res.cloudinary.com/dnj7dtnvx/image/upload/project-1_hep4ho.png" alt="Project 1 For Rodgers Mugagga  Full-Stack Developer, Front-End Developer, Back-End Developer, Mobile Developer Based in Kampala, Uganda ">
+        <h3>Project One</h3>
+        <div class="btn-container">
+          <button class="btn btn-primary" onclick="location.href='https://github.com/rodgersmugagga'">GitHub</button>
+          <button class="btn btn-secondary" onclick="location.href='https://github.com/rodgersmugagga'">Live Demo</button>
         </div>
       </div>
-      <i class="fa-solid fa-arrow-down icon arrow" onclick="location.href='./#Experience'"></i>
-      
-
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">FrontEnd Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-
-            </div>
-          </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">BackEnd Development</h2>
-            <div class="article-container">
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                  <h3>Express JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <i class="fa-solid fa-circle-check icon"></i>
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-            </div>
-          </div>
+      <div class="project-card">
+        <img src="https://res.cloudinary.com/dnj7dtnvx/image/upload/project-2_nsvp7o.png" alt="Project 2 For Rodgers Mugagga Full-Stack Developer, Front-End Developer, Back-End Developer, Mobile Developer Based in Kampala, Uganda">
+        <h3>Project Two</h3>
+        <div class="btn-container">
+          <button class="btn btn-primary" onclick="location.href='https://github.com/rodgersmugagga'">GitHub</button>
+          <button class="btn btn-secondary" onclick="location.href='https://github.com/rodgersmugagga'">Live Demo</button>
         </div>
       </div>
-      <i class="fa-solid fa-arrow-down icon arrow" onclick="location.href='./#Projects'"></i>
-      
-
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img 
-            src="https://res.cloudinary.com/dnj7dtnvx/image/upload/project-1_hep4ho.png" 
-            alt="Project 1"
-            class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rodgersmugagga'">
-              Github
-            </button>
-            <!-- modify this button to link to a finished product -->
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rodgersmugagga'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            
-            <img 
-            src="https://res.cloudinary.com/dnj7dtnvx/image/upload/project-2_nsvp7o.png" 
-            alt="Project 2"
-            class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rodgersmugagga'">
-              Github
-            </button>
-            <!-- modify this button to link to a finished product -->
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rodgersmugagga'">
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img 
-            src="https://res.cloudinary.com/dnj7dtnvx/image/upload/project-3_rhinbc.png" 
-            alt="Project 3"
-            class="project-img">
-          </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rodgersmugagga'">
-              Github
-            </button>
-            <!-- modify this button to link to a finished product -->
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rodgersmugagga'">
-              Live Demo
-            </button>
-          </div>
+      <div class="project-card">
+        <img src="https://res.cloudinary.com/dnj7dtnvx/image/upload/project-3_rhinbc.png" alt="Project 3 For Rodgers Mugagga Full-Stack Developer, Front-End Developer, Back-End Developer, Mobile Developer Based in Kampala, Uganda">
+        <h3>Project Three</h3>
+        <div class="btn-container">
+          <button class="btn btn-primary" onclick="location.href='https://github.com/rodgersmugagga'">GitHub</button>
+          <button class="btn btn-secondary" onclick="location.href='https://github.com/rodgersmugagga'">Live Demo</button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section-intro">Get in Touch</p>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-card">
+        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:rodgersmugagga68@gmail.com">Email</a>
       </div>
-      <i class="fa-solid fa-arrow-down icon arrow" onclick="location.href='./#Projects'"></i>
-      
-
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <i class="fa-regular fa-envelope icon contact-icon email-icon"></i>
-          
-          <p><a href="mailto:rodgersmugagga68@gmail.com">email</a></p>
-        </div>
-        <div class="contact-info-container">
-          <i class="fa-brands fa-linkedin icon contact-icon" onclick="location.href='https://www.linkedin.com/in/mugaggarodgers'"></i>
-
-          <p><a href="https://www.linkedin.com/in/mugaggarodgers">LinkedIn</a></p>
-        </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https://wa.me/256762557651" target="_blank">WhatsApp</a>
       </div>
-    </section>
+      <div class="contact-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/mugaggarodgers/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-      
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Rodgers Mugagga. All Rights Reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rodgers Mugagga. All rights reserved.</p>
+    <p>Rodgers Mugagga — Full-Stack Developer, Kampala, Uganda</p>
+  <p>Hire a software engineer in Uganda for your next web or mobile app project.</p>
+  </footer>
 
-    
   <!-- JS -->
   <script src="script.js"></script>
 </body>
