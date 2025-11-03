@@ -22,6 +22,10 @@ app.use('/api/blogs', require('./routes/blogRoutes'));
 app.use('/api/contact', require('./routes/contactRoutes'));
 app.use('/api/upload', require('./routes/uploadRoutes'));
 
+app.get('/', (req, res) => {
+  res.send('Welcome to Rodgers Mugagga Portfolio API ');
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ 
