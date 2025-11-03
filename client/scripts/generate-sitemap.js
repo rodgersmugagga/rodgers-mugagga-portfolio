@@ -1,9 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const BASE_URL = 'https://rodgers-mugagga-portfolio.netlify.app';
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_URL = process.env.VITE_API_URL || 'http://localhost:3000';
 
 async function generateSitemap() {
   try {
