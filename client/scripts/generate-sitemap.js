@@ -39,7 +39,8 @@ async function generateSitemap() {
   </url>`).join('')}
 </urlset>`;
 
-    fs.writeFileSync(path.join(path.resolve(), 'client', 'public', 'sitemap.xml'), sitemap, 'utf8');
+    fs.writeFileSync(path.join(path.resolve(), 'public', 'sitemap.xml'), sitemap, 'utf8');
+
     console.log('✅ Sitemap generated successfully!');
   } catch (err) {
     console.error('❌ Error generating sitemap:', err.message);
