@@ -63,9 +63,9 @@ const SEO = ({
             jobTitle: 'Full-Stack Software Engineer',
             url: siteUrl,
             sameAs: [
-              'https://github.com/YOUR_GITHUB',
-              'https://linkedin.com/in/YOUR_LINKEDIN',
-              'https://twitter.com/YOUR_TWITTER'
+              'https://github.com/rodgersmugagga',
+              'https://www.linkedin.com/in/mugaggarodgers'
+              
             ]
           },
           ...(article && {
