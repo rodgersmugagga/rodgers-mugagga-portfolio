@@ -25,8 +25,8 @@ const Hero = () => {
       <div className="flex-shrink-0 relative z-10 animate-scale-in">
         <div className="relative">
           <img
-            src="https://res.cloudinary.com/dnj7dtnvx/image/upload/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png"
-            alt="Rodgers Mugagga profile picture Full-Stack Developer, Front-End Developer, Back-End Developer, Mobile Developer Based in Kampala, Uganda"
+            src="https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768073440/rodgers22_1_tonfcv.jpg"
+            alt="Rodgers Mugagga profile picture Full-Stack Developer, Front-End Developer, Back-End Developer, Mobile Developer Based in Kampala, founder and CEO of Rodvers Company Limited - Uganda"
             className="w-40 h-40 lg:w-48 lg:h-48 rounded-full border-4 border-accent 
                        shadow-[0_0_30px_rgba(0,191,255,0.5)] hover:scale-110 
                        transition-all duration-500 cursor-pointer"

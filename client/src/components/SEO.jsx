@@ -10,7 +10,8 @@ const SEO = ({
   schema 
 }) => {
   const siteUrl = 'https://rodgers-mugagga-portfolio.netlify.app';
-  const defaultImage = 'https://res.cloudinary.com/dnj7dtnvx/image/upload/f_auto,q_auto,w_1200,h_630,c_fill/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png';
+  // Use the local public image as the default Open Graph / social image
+  const defaultImage = `${siteUrl}/rodgers-mugagga.jpg`;
   const defaultKeywords = 'Rodgers Mugagga, Software Engineer Kampala, Web Developer Uganda, Full-Stack Developer Uganda, MERN Stack Developer Kampala, JavaScript Developer Uganda, React Developer Kampala, Node.js Expert Uganda, MongoDB Developer East Africa, Express.js Developer Uganda, TypeScript Developer Kampala, AWS Cloud Engineer Uganda, DevOps Engineer Kampala, Software Development Company Uganda, IT Solutions Uganda, Web Application Developer Kampala, Mobile App Developer Uganda, API Development Kampala, Tech Consultant Uganda, E-commerce Developer Uganda, UI/UX Developer Kampala, Backend Developer Uganda, Frontend Developer Kampala, Database Expert Uganda, Cloud Computing Specialist Kampala, Software Architect Uganda, Tech Lead Kampala, System Design Expert Uganda, REST API Developer Kampala, GraphQL Expert Uganda, Microservices Developer Kampala, Docker Specialist Uganda, Kubernetes Expert Kampala, CI/CD Expert Uganda, African Tech Professional, East African Developer, Ugandan Programmer, Digital Solutions Uganda, Tech Innovation Kampala, Software Solutions East Africa';
   
   return (
@@ -60,7 +61,7 @@ const SEO = ({
           author: {
             '@type': 'Person',
             name: 'Rodgers Mugagga',
-            jobTitle: 'Full-Stack Software Engineer',
+            jobTitle: 'Full-Stack Software Engineer, founder and CEO of Rodvers Company Limited - Uganda',
             url: siteUrl,
             sameAs: [
               'https://github.com/rodgersmugagga',
@@ -89,7 +90,7 @@ const SEO = ({
               "@id": `${siteUrl}/#person`,
               "name": "Rodgers Mugagga",
               "url": siteUrl,
-              "jobTitle": "Full-Stack MERN Developer"
+              "jobTitle": "Full-Stack MERN Developer, founder and CEO of Rodvers Company Limited - Uganda",
             },
             "publisher": {
               "@type": "Person",
