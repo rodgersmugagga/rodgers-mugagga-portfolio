@@ -1,3 +1,5 @@
+import resume from '../assets/RODGERS-RESUME.pdf';
+
 const Hero = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -55,11 +57,13 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <a
-            href="/client/src/assets/RODGERS-RESUME.pdf"
+            href={resume}
             download="Rodgers-Mugagga-Resume.pdf"
             className="px-8 py-4 bg-accent text-white rounded-xl font-semibold
                       hover:-translate-y-1 hover:shadow-glow-accent-lg
                       transition-all duration-300 group shine-effect inline-flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fa-solid fa-download"></i>
             Download CV

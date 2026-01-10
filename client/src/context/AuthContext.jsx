@@ -29,17 +29,35 @@ export const AuthProvider = ({ children }) => {
 
   const verifyPasskey = (passkey) => {
     // Compare with the environment value and, if valid, store the passkey
-    const isValid = passkey === import.meta.env.VITE_ADMIN_PASSKEY;
+    const expected = String(import.meta.env.VITE_ADMIN_PASSKEY || '').trim();
+    const provided = String(passkey || '').trim();
+    const isValid = provided === expected;
+
     if (isValid) {
-      setAdminPasskey(passkey);
+      // update state
+      setAdminPasskey(provided);
       setIsAdmin(true);
+      // immediately persist to localStorage to avoid race conditions with routing
+      try {
+        localStorage.setItem('adminPasskey', provided);
+        localStorage.setItem('isAdmin', 'true');
+      } catch (e) {
+        console.warn('Could not write admin state to localStorage', e);
+      }
     }
+
     return isValid;
   };
 
   const logout = () => {
     setAdminPasskey('');
     setIsAdmin(false);
+    try {
+      localStorage.removeItem('adminPasskey');
+      localStorage.removeItem('isAdmin');
+    } catch (e) {
+      console.warn('Could not remove admin state from localStorage', e);
+    }
   };
 
   return (

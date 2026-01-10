@@ -3,23 +3,26 @@ const Projects = () => {
     {
       id: 1,
       title: 'Project One',
-      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/project-1_hep4ho.png',
-      github: 'https://github.com/rodgersmugagga',
-      demo: 'https://github.com/rodgersmugagga',
+      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078779/IMG_7458_csemcr.jpg',
+      github: 'https://github.com/rodgersmugagga/rodgers-mugagga-portfolio',
+      demo: 'https://rodgers-mugagga-portfolio.netlify.app',
+      description: 'Personal portfolio for Mugagga Rodgers — a Full-Stack MERN developer based in Kampala, Uganda. The site showcases skills (React, Node.js, Flutter, PHP, MySQL), experience, recent projects, and contact information for clients in Kampala and East Africa.'
     },
     {
       id: 2,
       title: 'Project Two',
-      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/project-2_nsvp7o.png',
-      github: 'https://github.com/rodgersmugagga',
-      demo: 'https://github.com/rodgersmugagga',
+      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078780/IMG_7457_c4ijgj.jpg',
+      github: 'https://github.com/rodgersmugagga/listings',
+      demo: 'https://listings-chvc.onrender.com',
+      description: 'A listings application built with the MERN stack and Tailwind CSS. The project demonstrates a React front-end paired with a Node/Express and MongoDB backend to manage listings and related data.'
     },
     {
       id: 3,
       title: 'Project Three',
-      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/project-3_rhinbc.png',
-      github: 'https://github.com/rodgersmugagga',
-      demo: 'https://github.com/rodgersmugagga',
+      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078780/IMG_7456_iirjht.jpg',
+      github: 'https://github.com/rodgersmugagga/rodvers-company-website',
+      demo: 'https://rodvers.vercel.app',
+      description: 'Rodvers Company Limited website — showcasing the company\'s software, web, and mobile services for businesses in Kampala, Mbarara, and across Uganda, focused on helping local businesses grow digitally.'
     },
   ];
 
@@ -53,7 +56,7 @@ const Projects = () => {
               <div className="overflow-hidden relative">
                 <img
                   src={project.image}
-                  alt={`${project.title} - Rodgers Mugagga Full-Stack Developer`}
+                  alt={project.description ? `${project.title} — ${project.description}` : `${project.title} - Rodgers Mugagga Full-Stack Developer`}
                   className="w-full h-56 object-cover group-hover:scale-110 
                            transition-transform duration-500"
                 />

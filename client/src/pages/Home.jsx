@@ -4,7 +4,9 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import Company from '../components/Company';
 import Contact from '../components/Contact';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   useEffect(() => {
@@ -71,11 +73,12 @@ const Home = () => {
         <link rel="canonical" href="https://rodgers-mugagga-portfolio.netlify.app/" />
       </Helmet>
 
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+  <Hero />
+  <About />
+  <Experience />
+  <Projects />
+  <Company />
+  <Contact />
     </>
   );
 };
