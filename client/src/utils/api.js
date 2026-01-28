@@ -16,7 +16,11 @@ const api = axios.create({
 // Add admin passkey header from localStorage for all requests when present
 api.interceptors.request.use((config) => {
   const adminPasskey = localStorage.getItem('adminPasskey');
-  if (adminPasskey) {
+  // Prefer a JWT token (new flow). Fall back to legacy adminPasskey header.
+  const adminToken = localStorage.getItem('adminToken');
+  if (adminToken) {
+    config.headers['Authorization'] = `Bearer ${adminToken}`;
+  } else if (adminPasskey) {
     config.headers['x-admin-passkey'] = adminPasskey;
   }
   // If sending FormData, remove the default Content-Type so the browser

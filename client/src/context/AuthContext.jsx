@@ -29,24 +29,40 @@ export const AuthProvider = ({ children }) => {
 
   const verifyPasskey = (passkey) => {
     // Compare with the environment value and, if valid, store the passkey
-    const expected = String(import.meta.env.VITE_ADMIN_PASSKEY || '').trim();
-    const provided = String(passkey || '').trim();
-    const isValid = provided === expected;
-
-    if (isValid) {
-      // update state
-      setAdminPasskey(provided);
-      setIsAdmin(true);
-      // immediately persist to localStorage to avoid race conditions with routing
-      try {
-        localStorage.setItem('adminPasskey', provided);
-        localStorage.setItem('isAdmin', 'true');
-      } catch (e) {
-        console.warn('Could not write admin state to localStorage', e);
-      }
-    }
-
-    return isValid;
+    // POST to server to validate passkey and obtain a JWT token. This avoids
+    // mismatches between client build-time passkey and server runtime secret.
+    return fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3000'}/api/admin/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ passkey })
+    })
+      .then(async (res) => {
+        if (!res.ok) {
+          const body = await res.json().catch(() => ({}));
+          throw new Error(body.message || 'Login failed');
+        }
+        return res.json();
+      })
+      .then((data) => {
+        const token = data.token;
+        if (token) {
+          setAdminPasskey(passkey);
+          setIsAdmin(true);
+          try {
+            localStorage.setItem('adminPasskey', passkey);
+            localStorage.setItem('adminToken', token);
+            localStorage.setItem('isAdmin', 'true');
+          } catch (e) {
+            console.warn('Could not write admin state to localStorage', e);
+          }
+          return true;
+        }
+        return false;
+      })
+      .catch((err) => {
+        console.warn('Admin login failed', err.message || err);
+        return false;
+      });
   };
 
   const logout = () => {
