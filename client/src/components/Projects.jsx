@@ -2,28 +2,37 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078779/IMG_7458_csemcr.jpg',
-      github: 'https://github.com/rodgersmugagga/rodgers-mugagga-portfolio',
-      demo: 'https://rodgers-mugagga-portfolio.netlify.app',
-      description: 'Personal portfolio for Mugagga Rodgers — a Full-Stack MERN developer based in Kampala, Uganda. The site showcases skills (React, Node.js, Flutter, PHP, MySQL), experience, recent projects, and contact information for clients in Kampala and East Africa.'
+      title: 'HarveMart',
+      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1769608734/IMG_7589_itw2og.png',
+      github: 'https://github.com/rodgersmugagga/agriMarketPlace',
+      demo: 'https://harvemart.onrender.com',
+      description: "HarveMart — Uganda's trusted agriculture marketplace that connects farmers, buyers and agri-businesses across Kampala, Wakiso, Jinja, Mbarara and beyond; buy and sell crops, livestock, farm equipment and services through localized listings and verified sellers."
     },
     {
       id: 2,
-      title: 'Project Two',
+      title: 'Rodvers Company Limited Website',
+      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078780/IMG_7456_iirjht.jpg',
+      github: 'https://github.com/rodgersmugagga/rodvers-company-website',
+      demo: 'https://rodvers.vercel.app',
+      description: 'Rodvers Company Limited website — showcasing the company\'s software, web, and mobile services for businesses in Kampala, Mbarara, and across Uganda, focused on helping local businesses grow digitally.'
+    },
+    {
+      id: 3,
+      title: 'listings webApp',
       image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078780/IMG_7457_c4ijgj.jpg',
       github: 'https://github.com/rodgersmugagga/listings',
       demo: 'https://listings-chvc.onrender.com',
       description: 'A listings application built with the MERN stack and Tailwind CSS. The project demonstrates a React front-end paired with a Node/Express and MongoDB backend to manage listings and related data.'
     },
     {
-      id: 3,
-      title: 'Project Three',
-      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078780/IMG_7456_iirjht.jpg',
-      github: 'https://github.com/rodgersmugagga/rodvers-company-website',
-      demo: 'https://rodvers.vercel.app',
-      description: 'Rodvers Company Limited website — showcasing the company\'s software, web, and mobile services for businesses in Kampala, Mbarara, and across Uganda, focused on helping local businesses grow digitally.'
+      id: 4,
+      title: 'Rodgers Mugagga Portfolio',
+      image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078779/IMG_7458_csemcr.jpg',
+      github: 'https://github.com/rodgersmugagga/rodgers-mugagga-portfolio',
+      demo: 'https://rodgers-mugagga-portfolio.netlify.app',
+      description: 'Personal portfolio for Mugagga Rodgers — a Full-Stack MERN developer based in Kampala, Uganda. The site showcases skills (React, Node.js, Flutter, PHP, MySQL), experience, recent projects, and contact information for clients in Kampala and East Africa.'
     },
+  
   ];
 
   return (
