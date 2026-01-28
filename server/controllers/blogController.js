@@ -88,6 +88,21 @@ exports.getBlogBySlug = async (req, res) => {
   }
 };
 
+// Admin version: fetch a blog by slug regardless of published state
+exports.getBlogBySlugAdmin = async (req, res) => {
+  try {
+    const blog = await Blog.findOne({ slug: req.params.slug });
+
+    if (!blog) {
+      return res.status(404).json({ success: false, message: 'Blog post not found' });
+    }
+
+    res.json({ success: true, blog });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error fetching blog', error: error.message });
+  }
+};
+
 // Get all blogs (admin - includes unpublished)
 exports.getAllBlogsAdmin = async (req, res) => {
   try {
