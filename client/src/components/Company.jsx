@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 const Company = () => {
   const company = {
     name: 'Rodvers Company Limited',
-    url: 'https://rodvers.vercel.app',
+    url: 'https://rodvers.com',
     logo: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1760456116/listings_app_avatars/dpkpjjogegqnsjvbgx5x.png',
     sameAs: [
       'https://www.linkedin.com/company/rodvers',
@@ -61,7 +61,7 @@ const Company = () => {
               Visit Rodvers
             </a>
             <a
-              href="mailto:rodgersmugagga84@gmail.com"
+              href="mailto:hello@rodvers.com"
               className="px-6 py-3 bg-transparent text-accent border-2 border-accent rounded-xl font-semibold hover:bg-accent hover:text-white transition-all"
             >
               Contact Company

@@ -39,7 +39,7 @@ const Home = () => {
       <SEO
         title="Full-Stack MERN Developer in Kampala, Uganda"
         description="Rodgers Mugagga — Full-Stack developer in Kampala, Uganda building high-performance MERN apps, financial systems, real-estate solutions, and tech insights."
-        keywords="Rodgers Mugagga, Full-Stack Developer Uganda, MERN Developer Kampala, Web Developer Uganda, Software Engineer Uganda, Tech Blog Uganda"
+        keywords="Rodgers Mugagga, Full-Stack Developer Uganda, MERN Developer Kampala, Web Developer Uganda, Software Engineer Uganda"
       />
 
       <Helmet>

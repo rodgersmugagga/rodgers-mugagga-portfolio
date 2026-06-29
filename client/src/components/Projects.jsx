@@ -13,7 +13,7 @@ const Projects = () => {
       title: 'Rodvers Company Limited Website',
       image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078780/IMG_7456_iirjht.jpg',
       github: 'https://github.com/rodgersmugagga/rodvers-company-website',
-      demo: 'https://rodvers.vercel.app',
+      demo: 'https://rodvers.com',
       description: 'Rodvers Company Limited website — showcasing the company\'s software, web, and mobile services for businesses in Kampala, Mbarara, and across Uganda, focused on helping local businesses grow digitally.'
     },
     {

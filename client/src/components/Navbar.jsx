@@ -57,7 +57,6 @@ const Navbar = () => {
     { label: 'About', id: 'about' },
     { label: 'Experience', id: 'experience' },
     { label: 'Projects', id: 'projects' },
-    { label: 'Blogs', path: '/blog' },
     { label: 'Contact', id: 'contact' },
   ];
 

@@ -6,12 +6,9 @@ import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import BlogList from './pages/BlogList';
-import BlogPost from './pages/BlogPost';
-import AdminLogin from './pages/AdminLogin';
-import AdminDashboard from './pages/AdminDashboard';
+
 import NotFound from './pages/NotFound';
-import ProtectedRoute from './components/ProtectedRoute';
+
 
 function App() {
   return (
@@ -24,17 +21,6 @@ function App() {
               <Navbar />
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/blog" element={<BlogList />} />
-                <Route path="/blog/:slug" element={<BlogPost />} />
-                <Route path="/admin/login" element={<AdminLogin />} />
-                <Route
-                  path="/admin/dashboard"
-                  element={
-                    <ProtectedRoute>
-                      <AdminDashboard />
-                    </ProtectedRoute>
-                  }
-                />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

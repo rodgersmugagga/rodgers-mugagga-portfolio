@@ -53,40 +53,34 @@ const About = () => {
             </div>
 
             {/* Bio Text */}
-            <div className="space-y-4 leading-relaxed">
-              <p className="text-text-dark dark:text-text-light">
-                I am <strong className="text-text-dark dark:text-text-light">Mugagga Rodgers</strong>, a passionate{' '}
-                <strong className="text-text-dark dark:text-text-light">Full-Stack MERN Developer</strong> and{' '}
-                <strong className="text-text-dark dark:text-text-light">Software Engineering student</strong> at{' '}
-                <strong className="text-text-dark dark:text-text-light">Mbarara University of Science & Technology</strong> in Uganda. 
-                I specialize in building high-performance{' '}
-                <strong className="text-text-dark dark:text-text-light">web applications</strong> and{' '}
-                <strong className="text-text-dark dark:text-text-light">mobile apps</strong>, with expertise in{' '}
-                <strong className="text-text-dark dark:text-text-light">React, Node.js, JavaScript, Flutter, PHP, and MySQL</strong>.
-              </p>
-              
-              <p className="text-text-dark dark:text-text-light">
-                As <strong className="text-text-dark dark:text-text-light">Speaker of MUCOSA</strong>, I developed strong{' '}
-                <strong className="text-text-dark dark:text-text-light">leadership</strong> and{' '}
-                <strong className="text-text-dark dark:text-text-light">communication skills</strong>, actively contributing 
-                to the local and East African <strong className="text-text-dark dark:text-text-light">tech community</strong>.
-              </p>
-              
-              <p className="text-text-dark dark:text-text-light">
-                My technical toolkit covers{' '}
-                <strong className="text-text-dark dark:text-text-light">front-end and back-end development</strong>,{' '}
-                <strong className="text-text-dark dark:text-text-light">API design</strong>, and{' '}
-                <strong className="text-text-dark dark:text-text-light">clean, maintainable code</strong>. I continuously 
-                explore new technologies and best practices to deliver scalable and efficient 
-                software solutions.
-              </p>
-              
-              <p className="text-text-dark dark:text-text-light">
-                Browse my <strong className="text-text-dark dark:text-text-light">portfolio projects</strong> to see how 
-                I tackle real-world challenges and collaborate effectively on software development 
-                projects in Uganda and across East Africa.
-              </p>
-            </div>
+            
+
+            
+ <div className="space-y-4 leading-relaxed">
+  <p>
+    I am <strong>Mugagga Rodgers</strong>, a Full-Stack Software Engineer,
+    founder of <strong>{" "}</strong>
+    <a href="https://rodvers.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-accent hover:underline" > Rodvers Company Limited </a>, and a Software Engineering student at
+    <strong> Mbarara University of Science and Technology</strong>.
+  </p>
+
+  <p>
+    I build scalable web and mobile applications using
+    <strong> React, Node.js, Express, Flutter, PostgreSQL, and MongoDB</strong>,
+    with a focus on creating technology that solves real business challenges
+    and delivers measurable impact.
+  </p>
+
+  <p>
+    I combine technical expertise
+    with <strong>leadership</strong> and a strong commitment to using technology to drive
+    innovation and business growth across Africa.
+  </p>
+ </div>
+
+
+
+
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { contactAPI } from '../utils/api';
+
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,16 +25,33 @@ const Contact = () => {
     setStatus({ type: '', message: '' });
 
     try {
-      await contactAPI.send(formData);
-      setStatus({
-        type: 'success',
-        message: 'Message sent successfully! I\'ll get back to you soon.',
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          ...formData,
+        }),
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus({
+          type: 'success',
+          message: 'Message sent successfully! I\'ll get back to you soon.',
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus({
+          type: 'error',
+          message: result.message || 'Failed to send message. Please try again.',
+        });
+      }
     } catch (error) {
       setStatus({
         type: 'error',
-        message: error.response?.data?.message || 'Failed to send message. Please try again.',
+        message: 'Failed to send message. Please try again.',
       });
     } finally {
       setLoading(false);
@@ -44,7 +62,7 @@ const Contact = () => {
     {
       icon: 'fa-regular fa-envelope',
       label: 'Email',
-      link: 'mailto:rodgersmugagga68@gmail.com',
+      link: 'mailto:rodgers@rodvers.com',
     },
     {
       icon: 'fa-brands fa-whatsapp',
