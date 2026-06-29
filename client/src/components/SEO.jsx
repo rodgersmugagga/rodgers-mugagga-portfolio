@@ -9,7 +9,7 @@ const SEO = ({
   keywords,
   schema 
 }) => {
-  const siteUrl = 'https://rodgers-mugagga-portfolio.netlify.app';
+  const siteUrl = 'https://rodgersmugagga.rodvers.com';
   // Use the local public image as the default Open Graph / social image
   const defaultImage = `${siteUrl}/rodgers-mugagga.jpg`;
   const defaultKeywords = 'Rodgers Mugagga, Software Engineer Kampala, Web Developer Uganda, Full-Stack Developer Uganda, MERN Stack Developer Kampala, JavaScript Developer Uganda, React Developer Kampala, Node.js Expert Uganda, MongoDB Developer East Africa, Express.js Developer Uganda, TypeScript Developer Kampala, AWS Cloud Engineer Uganda, DevOps Engineer Kampala, Software Development Company Uganda, IT Solutions Uganda, Web Application Developer Kampala, Mobile App Developer Uganda, API Development Kampala, Tech Consultant Uganda, E-commerce Developer Uganda, UI/UX Developer Kampala, Backend Developer Uganda, Frontend Developer Kampala, Database Expert Uganda, Cloud Computing Specialist Kampala, Software Architect Uganda, Tech Lead Kampala, System Design Expert Uganda, REST API Developer Kampala, GraphQL Expert Uganda, Microservices Developer Kampala, Docker Specialist Uganda, Kubernetes Expert Kampala, CI/CD Expert Uganda, African Tech Professional, East African Developer, Ugandan Programmer, Digital Solutions Uganda, Tech Innovation Kampala, Software Solutions East Africa';

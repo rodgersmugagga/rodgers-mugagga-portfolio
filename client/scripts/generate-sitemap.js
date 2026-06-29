@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const BASE_URL = 'https://rodgers-mugagga-portfolio.netlify.app';
+const BASE_URL = 'https://rodgersmugagga.rodvers.com';
 const API_URL = process.env.VITE_API_URL || 'http://localhost:3000';
 
 async function generateSitemap() {

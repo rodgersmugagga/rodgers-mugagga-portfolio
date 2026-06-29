@@ -29,7 +29,7 @@ const Projects = () => {
       title: 'Rodgers Mugagga Portfolio',
       image: 'https://res.cloudinary.com/dnj7dtnvx/image/upload/v1768078779/IMG_7458_csemcr.jpg',
       github: 'https://github.com/rodgersmugagga/rodgers-mugagga-portfolio',
-      demo: 'https://rodgers-mugagga-portfolio.netlify.app',
+      demo: 'https://rodgersmugagga.rodvers.com',
       description: 'Personal portfolio for Mugagga Rodgers — a Full-Stack MERN developer based in Kampala, Uganda. The site showcases skills (React, Node.js, Flutter, PHP, MySQL), experience, recent projects, and contact information for clients in Kampala and East Africa.'
     },
   

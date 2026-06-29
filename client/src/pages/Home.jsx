@@ -49,9 +49,9 @@ const Home = () => {
             "@graph": [
               {
                 "@type": "Person",
-                "@id": "https://rodgers-mugagga-portfolio.netlify.app/#person",
+                "@id": "https://rodgersmugagga.rodvers.com/#person",
                 "name": "Rodgers Mugagga",
-                "url": "https://rodgers-mugagga-portfolio.netlify.app/",
+                "url": "https://rodgersmugagga.rodvers.com/",
                 "sameAs": [
                   "https://github.com/rodgersmugagga",
                   "https://www.linkedin.com/in/mugaggarodgers"
@@ -61,16 +61,16 @@ const Home = () => {
               },
               {
                 "@type": "WebSite",
-                "@id": "https://rodgers-mugagga-portfolio.netlify.app/#website",
-                "url": "https://rodgers-mugagga-portfolio.netlify.app/",
+                "@id": "https://rodgersmugagga.rodvers.com/#website",
+                "url": "https://rodgersmugagga.rodvers.com/",
                 "name": "Rodgers Mugagga — Portfolio",
-                "publisher": { "@id": "https://rodgers-mugagga-portfolio.netlify.app/#person" },
+                "publisher": { "@id": "https://rodgersmugagga.rodvers.com/#person" },
                 "inLanguage": "en-US"
               }
             ]
           })}
         </script>
-        <link rel="canonical" href="https://rodgers-mugagga-portfolio.netlify.app/" />
+        <link rel="canonical" href="https://rodgersmugagga.rodvers.com/" />
       </Helmet>
 
   <Hero />
